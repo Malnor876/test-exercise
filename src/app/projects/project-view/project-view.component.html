@@ -1,0 +1,24 @@
+<ng-container *ngIf="project">
+  <h2>{{project.subject}}</h2>
+  <mat-divider></mat-divider>
+  <table>
+    <thead>
+    <th>Дата начала</th>
+    <th>Дата окончания</th>
+    <th>Автор</th>
+    </thead>
+    <tr>
+      <td>{{project.startDate | date:'d MMMM y': '': 'ru'}}</td>
+      <td>{{project.endDate | date:'d MMMM y': '': 'ru'}}</td>
+      <td>{{project.createdBy}}</td>
+    </tr>
+    <tr>
+      <th colspan="3">Описание</th>
+    </tr>
+    <tr>
+      <td colspan="3">{{project.description}}</td>
+    </tr>
+
+  </table>
+
+</ng-container>

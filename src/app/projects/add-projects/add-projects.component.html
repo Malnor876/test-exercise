@@ -1,0 +1,10 @@
+<h3>Введите JSON</h3>
+<mat-divider></mat-divider>
+<form>
+  <mat-form-field appearance="outline">
+    <textarea matInput rows="30" [(ngModel)]="jsonField" name="json" (focusin)="resetError()"></textarea>
+  </mat-form-field>
+  <mat-error>{{errors| async}}</mat-error>
+  <button mat-button mat-raised-button (click)="handleSaveButton()">Сохранить</button>
+
+</form>

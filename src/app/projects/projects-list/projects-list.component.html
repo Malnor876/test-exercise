@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let project of (projects$ | async)" [routerLink]="'/view/' + project.id">
+    <p>{{project.startDate| date:'d MMMM y': '': 'ru'}} - {{project.endDate | date:'d MMMM y': '': 'ru'}}</p>
+    <h1>{{project.subject}}</h1>
+    <p>{{project.createdBy}}</p></li>
+</ul>

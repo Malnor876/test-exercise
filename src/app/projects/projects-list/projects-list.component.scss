@@ -1,0 +1,22 @@
+ul {
+  list-style: none;
+  max-width: 300px;
+
+  li {
+    border: solid 1px gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: 5px;
+    p{
+      color: gray;
+    }
+    p:last-child{
+      margin-left: auto;
+    }
+  }
+  li:hover{
+    background-color: lightgray;
+  }
+}

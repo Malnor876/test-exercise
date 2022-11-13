@@ -1,0 +1,11 @@
+:host > button{
+  margin: auto;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+mat-form-field{
+  width: 600px;
+}
